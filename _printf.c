@@ -23,6 +23,8 @@ int _printf(const char *format, ...)
 				sum += print_mod();
 			else if (format[i] == 's')
 				sum += print_string(list);
+			else if (format[i] == 'd' || format[i] == 'i')
+				sum += print_int(list);
 		}
 		else
 		{

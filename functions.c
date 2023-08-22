@@ -39,3 +39,29 @@ int print_string(va_list list)
 	}
 	return (sum);
 }
+/**
+ * print_int - print
+ * @list: vi
+ * Return : n
+ */
+int print_int(va_list list)
+{
+	unsigned int v = va_arg(list, unsigned int);
+	char* str;
+	unsigned int i = 0, sum = 0;
+
+	while(v > 0)
+	{
+		str[i] = v % 10 + 48;
+		v = v / 10;
+		i++;
+	}
+	strrev(str);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+		sum++;
+	}
+	return (sum);
+}
+
