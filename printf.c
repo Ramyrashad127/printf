@@ -17,7 +17,12 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
-			sum += handle_print(format, &i, list);
+			if (format[i] == 'c')
+				sum += print_char(list)
+			else if (format[i] == '%')
+				sum += print_percent();
+			else if (format[i] == 's')
+				sum += print_string(list);
 		}
 		else
 		{
