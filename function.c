@@ -19,7 +19,7 @@ int _putchar(char c)
  */
 int print_char(va_list list)
 {
-	char c = va_arg(list,int);
+	char c = va_arg(list,char);
 
 	_putchar(c);
 	return (1);
@@ -29,9 +29,8 @@ int print_char(va_list list)
  * @list: vector
  * Return: 1
  */
-int print_percent(va_list list)
+int print_percent()
 {
-	(void)(list);
 	_putchar('%');
 	return (1);
 }

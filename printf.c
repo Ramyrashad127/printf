@@ -23,5 +23,6 @@ int _printf(const char *format, ...)
 			sum++;
 		}
 	}
+	va_end(list);
 	return (sum);
 }

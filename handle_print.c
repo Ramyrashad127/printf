@@ -6,7 +6,7 @@
  * @ind: index
  * Return: number of char
  */
-int handle_print(const char * f, int *ind, va_list list)
+int handle_print(const char* f, int *ind, va_list list)
 {
 	int i;
 	option sp[]={
