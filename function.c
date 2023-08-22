@@ -19,7 +19,7 @@ int _putchar(char c)
  */
 int print_char(va_list list)
 {
-	char c = va_arg(list,char);
+	char c = va_arg(list,int);
 
 	_putchar(c);
 	return (1);
@@ -47,7 +47,7 @@ int print_string(va_list list)
 	if (!str)
 	{
 		str = "(null)";
-	}
+	i
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		sum++;
