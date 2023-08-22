@@ -1,0 +1,41 @@
+#include "main.h"
+/**
+ * print_char - chaer
+ * @list: vector
+ * Return:1
+ */
+int print_char(va_list list)
+{
+	char c = va_arg(list, int);
+
+	_putchar(c);
+	return (1);
+}
+/**
+ * print_mod - mod
+ * Return: 1
+ */
+int print_mod()
+{
+	_putchar('%');
+	return (1);
+}
+/**
+ * print_string - string
+ * @list: vi
+ * Return: n
+ */
+int print_string(va_list list)
+{
+	char* str = va_arg(list, char*);
+	int i, sum = 0;
+
+	if (str == NULL)
+		str = "(null)";
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+		sum++;
+	}
+	return (sum);
+}
