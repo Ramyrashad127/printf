@@ -7,7 +7,7 @@
 int _printf(const char *format, ...)
 {
 	va_list list;
-	int i, sum;
+	unsigned int i, sum;
 
 	va_start(list, format);
 	if (format == NULL)

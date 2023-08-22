@@ -28,7 +28,7 @@ int print_mod()
 int print_string(va_list list)
 {
 	char* str = va_arg(list, char*);
-	int i, sum = 0;
+	unsigned int i, sum = 0;
 
 	if (str == NULL)
 		str = "(null)";
