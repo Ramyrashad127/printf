@@ -7,7 +7,7 @@
 int _printf(const char *format, ...)
 {
 	va_list list;
-	unsigned int i, sum;
+	unsigned int i, sum = 0;
 
 	va_start(list, format);
 	if (format == NULL)
@@ -22,9 +22,7 @@ int _printf(const char *format, ...)
 			else if (format[i] == '%')
 				sum += print_mod();
 			else if (format[i] == 's')
-				sum += print_string(list);
-			else if (format[i] == 'd' || format[i] == 'i')
-				sum += print_int(list);
+				sum += print_string(list);;
 		}
 		else if (format[i] == '\n')
 		{
