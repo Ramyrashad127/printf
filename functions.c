@@ -39,3 +39,27 @@ int print_string(va_list list)
 	}
 	return (sum);
 }
+/**
+ * print_int - print
+ * @list: vi
+ * Return:int
+ */
+int print_int(va_list list)
+{
+	char *num;
+	int i = 0, curr = va_arg(list, int), sum = 0;
+
+	while (curr > 0)
+	{
+		num[i] = curr % 10 + 48;
+		i++;
+		cur /= 10;
+	}
+	sum = i;
+	i--;
+	for (i; i >= 0; i--)
+	{
+		_putchar(num[i]);
+	}
+	return (sum);
+}
