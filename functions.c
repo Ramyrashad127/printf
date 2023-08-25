@@ -47,8 +47,13 @@ int print_string(va_list list)
 int print_int(va_list list)
 {
 	char num[15];
-	int i = 0, curr = va_arg(list, int), sum = 0;
+	int i = 0, curr = va_arg(list, int), sum = 0, x = 0;
 
+	if (curr < 0)
+	{
+		x = 1;
+		curr = -1 * curr;
+	}
 	while (curr > 0)
 	{
 		num[i] = curr % 10 + 48;
@@ -57,6 +62,11 @@ int print_int(va_list list)
 	}
 	sum = i;
 	i--;
+	if (x)
+	{
+		_putchar('-');
+		sum++;
+	}
 	for (; i >= 0; i--)
 	{
 		_putchar(num[i]);
