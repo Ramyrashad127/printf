@@ -53,7 +53,7 @@ int print_int(va_list list)
 	{
 		num[i] = curr % 10 + 48;
 		i++;
-		cur /= 10;
+		curr /= 10;
 	}
 	sum = i;
 	i--;
