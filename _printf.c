@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 			else if (format[i] == '%')
 				sum += print_mod();
 			else if (format[i] == 's')
-				sum += print_string(list);;
+				sum += print_string(list);
 		}
 		else if (format[i] == '\n')
 		{
