@@ -17,18 +17,16 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
-			if (format[i])
-			{
-				if (format[i] == 'c')
-					sum += print_char(list);
-				else if (format[i] == '%')
-					sum += print_mod();
-				else if (format[i] == 's')
-					sum += print_string(list);
-			}
+			if (format[i] == 'c')
+				sum += print_char(list);
+			else if (format[i] == '%')
+				sum += print_mod();
+			else if (format[i] == 's')
+				sum += print_string(list);
 			else
 			{
-				sum += _putchar('%');
+				sum ++;
+				_putchar('%');
 				i--;
 			}
 		}
