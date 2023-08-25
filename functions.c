@@ -8,6 +8,8 @@ int print_char(va_list list)
 {
 	char c = va_arg(list, int);
 
+	if (!c)
+		return (-1);
 	_putchar(c);
 	return (1);
 }
