@@ -2,7 +2,7 @@
 /**
  * _printf - print
  * @format: string
- * return: int
+ * Return: int
  */
 int _printf(const char *format, ...)
 {
