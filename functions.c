@@ -1,5 +1,4 @@
-#include<stdio.h>
-#include<stdlib.h>
+
 #include "main.h"
 /**
  * print_char - chaer
@@ -39,6 +38,5 @@ int print_string(va_list list)
 		_putchar(str[i]);
 		sum++;
 	}
-	free(str);
 	return (sum);
 }
