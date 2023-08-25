@@ -37,5 +37,6 @@ int print_string(va_list list)
 		_putchar(str[i]);
 		sum++;
 	}
+	free(str);
 	return (sum);
 }
