@@ -46,7 +46,7 @@ int print_string(va_list list)
  */
 int print_int(va_list list)
 {
-	char num[15];
+	char num[30];
 	int i = 0, curr = va_arg(list, int), sum = 0, x = 0;
 
 	if (curr < 0)
