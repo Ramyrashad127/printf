@@ -26,6 +26,11 @@ int _printf(const char *format, ...)
 			else if (format[i] == 'd' || format[i] == 'i')
 				sum += print_int(list);
 		}
+		else if (format[i] == '\n')
+		{
+			sum++;
+			_putchar('\n');
+		}
 		else
 		{
 			sum++;
