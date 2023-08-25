@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 				sum += print_string(list);
 			else
 			{
-				sum ++;
+				sum++;
 				_putchar('%');
 				i--;
 			}
